@@ -12,9 +12,15 @@
   "dependencies": {
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.417.0",
+<<<<<<< HEAD
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
+=======
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.30.0",
+>>>>>>> f5d158f (initial commit)
     "recharts": "^2.12.7"
   },
   "devDependencies": {
