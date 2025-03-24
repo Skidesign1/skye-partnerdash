@@ -8,7 +8,7 @@ const navigate = useNavigate();
         navigate("/dashboard");
     }; 
    return(
-        <div className="flex flex-col items-center justify-center h-screen w-full bg-white">
+        <div className="flex flex-col items-center justify-center h-screen w-full bg-white text-black">
             <div className="absolute top-8 w-full flex justify-center">
          <img src="/logo.png" alt="Logo" className="w-32 mx-auto" />
          </div>
@@ -22,7 +22,7 @@ const navigate = useNavigate();
 
                 <form onSubmit={handleLogin}>
                     <div className="mb-4">
-                        <label className="block text-gray-300">Email</label>
+                        <label className="block text-black">Email</label>
                         <input
                         type="email"
                         className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 bg-gray-800 text-white "
@@ -32,7 +32,7 @@ const navigate = useNavigate();
                         </div>
 
                         <div className="mb-4">
-                            <label className="block text-gray-300">
+                            <label className="block text-black">
                                 password
                             </label>
                             <input
