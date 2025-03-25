@@ -1,6 +1,8 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .login-page{
     filter: none !important;
     backdrop-filter: none !important;
@@ -28,4 +30,3 @@
     font-size: 3rem;
     font-weight: bold;
 }
-
