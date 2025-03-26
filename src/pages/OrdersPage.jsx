@@ -17,7 +17,7 @@ const orderStats = {
 const OrdersPage = () => {
 	return (
 		<div style={{ backgroundColor: "white", padding: "20px", flexGrow: 1}}>
-		<div className='flex-1 relative z-10 overflow-auto'>
+		<div className='flex-1 relative z-10 overflow-auto bg-gray-900'>
 			<Header title={"Orders"} />
 
 			<main className='max-w-7xl mx-auto py-6 px-4 lg:px-8'>

@@ -17,7 +17,8 @@ const userStats = {
 
 const UsersPage = () => {
 	return (
-		<div className='flex-1 overflow-auto relative z-10'>
+		<div style={{ backgroundColor: "white", padding: "20px", flexGrow: 1}}>
+		<div className='flex-1 overflow-auto relative z-10 bg-gray-900'>
 			<Header title='Users' />
 
 			<main className='max-w-7xl mx-auto py-6 px-4 lg:px-8'>
@@ -53,6 +54,7 @@ const UsersPage = () => {
 					<UserDemographicsChart />
 				</div>*/}
 			</main>
+		</div>
 		</div>
 	);
 };

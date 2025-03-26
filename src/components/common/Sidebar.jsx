@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-import { BarChart2, DollarSign, Menu, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users } from "lucide-react";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
-
-const SIDEBAR_ITEMS = [
-	{
-		name: "Overview",
-		icon: BarChart2,
-		color: "#6366f1",
-		href: "/",
-	},
-	{ name: "Products", icon: ShoppingBag, color: "#8B5CF6", href: "/products" },
-	{ name: "Users", icon: Users, color: "#EC4899", href: "/users" },
-	{ name: "Sales", icon: DollarSign, color: "#10B981", href: "/sales" },
-	{ name: "Orders", icon: ShoppingCart, color: "#F59E0B", href: "/orders" },
-	{ name: "Analytics", icon: TrendingUp, color: "#3B82F6", href: "/analytics" },
-	{ name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
-];
-
-const Sidebar = () => {
-	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-=======
 import { Menu, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, LogOut } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, color, motion } from "framer-motion";
@@ -49,21 +24,15 @@ const Sidebar = () => {
 		
 	};
 	
->>>>>>> f5d158f (initial commit)
 	return (
 		<motion.div
 			className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${
 				isSidebarOpen ? "w-64" : "w-20"
 			}`}
 			animate={{ width: isSidebarOpen ? 256 : 80 }}
-<<<<<<< HEAD
-		>
-			<div className='h-full bg-gray-800 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700'>
-=======
 			>
 			
 			<div className='h-full bg-gray-100 bg-opacity-50  p-4 flex flex-col border-r border-gray-700'>
->>>>>>> f5d158f (initial commit)
 				<motion.button
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
@@ -72,10 +41,7 @@ const Sidebar = () => {
 				>
 					<Menu size={24} />
 				</motion.button>
-<<<<<<< HEAD
-=======
 				
->>>>>>> f5d158f (initial commit)
 
 				<nav className='mt-8 flex-grow'>
 					{SIDEBAR_ITEMS.map((item) => (
