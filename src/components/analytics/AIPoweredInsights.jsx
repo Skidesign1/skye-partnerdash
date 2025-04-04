@@ -27,11 +27,7 @@ const INSIGHTS = [
 const AIPoweredInsights = () => {
 	return (
 		<motion.div
-<<<<<<< HEAD
-			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700'
-=======
 			className='bg-gray-800 bg-opacity-50 shadow-lg rounded-xl p-6 border border-gray-700'
->>>>>>> f5d158f (initial commit)
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 1.0 }}
