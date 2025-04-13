@@ -36,8 +36,7 @@ const OverviewCards = () => {
 						</div>
 					</div>
 					<div
-						className={`
-              mt-4 flex items-center ${item.change >= 0 ? "text-green-500" : "text-red-500"}
+						className={`mt-4 flex items-center ${item.change >= 0 ? "text-green-500" : "text-red-500"}
             `}
 					>
 						{item.change >= 0 ? <ArrowUpRight size='20' /> : <ArrowDownRight size='20' />}

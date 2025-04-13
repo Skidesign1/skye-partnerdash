@@ -2,17 +2,22 @@ import { motion } from "framer-motion";
 
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
-
+import Navbar from "../components/products/Navbar";
+import React, { useState } from "react";
 import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesTrendChart from "../components/products/SalesTrendChart";
 import ProductsTable from "../components/products/ProductsTable";
 
 const ProductsPage = () => {
+	const [show, setShow] = useState(false);
+	const handleShow = () => setShow(true);
+	const handleClose = () => setShow(false);
 	return (
 		<div style={{ backgroundColor: "white", padding: "20px", flexGrow: 1}}>
-		<div className='flex-1 overflow-auto relative z-10' bg-gray-900>
+		<div className='flex-1 overflow-auto relative z-10 bg-gray-900'>
 			<Header title='Products' />
+			<Navbar onAddCreative={handleShow} />
 
 			<main className='max-w-7xl mx-auto py-6 px-4 lg:px-8'>
 				{/* STATS */}
