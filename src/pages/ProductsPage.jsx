@@ -8,6 +8,7 @@ import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesTrendChart from "../components/products/SalesTrendChart";
 import ProductsTable from "../components/products/ProductsTable";
+// import { StatCard } from "../components/common/StatCard.jsx";
 
 const ProductsPage = () => {
 	const [show, setShow] = useState(false);
