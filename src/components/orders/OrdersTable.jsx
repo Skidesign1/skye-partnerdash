@@ -33,8 +33,8 @@ const OrdersTable = () => {
 			initial={{ opacity: 1, y: 20 }}
 			transition={{ delay: 0.4 }}
 		>
-			<div className='flex justify-between items-center mb-6 bg-gray-900 text-white'> 
-				<h2 className='text-xl font-semibold text-white'>Order List</h2>
+			<div className='flex justify-between items-center mb-6'>
+				<h2 className='text-xl font-semibold text-gray-100'>Order List</h2>
 				<div className='relative'>
 					<input
 						type='text'
@@ -51,22 +51,22 @@ const OrdersTable = () => {
 				<table className='min-w-full divide-y divide-gray-700'>
 					<thead>
 						<tr>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Order ID
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Customer
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Total
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Status
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Date
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider'>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Actions
 							</th>
 						</tr>
@@ -80,16 +80,16 @@ const OrdersTable = () => {
 								animate={{ opacity: 1 }}
 								transition={{ duration: 0.3 }}
 							>
-								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-white'>
+								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100'>
 									{order.id}
 								</td>
-								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-white'>
+								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100'>
 									{order.customer}
 								</td>
-								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-white'>
+								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100'>
 									${order.total.toFixed(2)}
 								</td>
-								<td className='px-6 py-4 whitespace-nowrap text-sm text-white'>
+								<td className='px-6 py-4 whitespace-nowrap text-sm text-gray-300'>
 									<span
 										className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
 											order.status === "Delivered"
@@ -104,8 +104,8 @@ const OrdersTable = () => {
 										{order.status}
 									</span>
 								</td>
-								<td className='px-6 py-4 whitespace-nowrap text-sm text-white'>{order.date}</td>
-								<td className='px-6 py-4 whitespace-nowrap text-sm text-white'>
+								<td className='px-6 py-4 whitespace-nowrap text-sm text-gray-300'>{order.date}</td>
+								<td className='px-6 py-4 whitespace-nowrap text-sm text-gray-300'>
 									<button className='text-indigo-400 hover:text-indigo-300 mr-2'>
 										<Eye size={18} />
 									</button>
