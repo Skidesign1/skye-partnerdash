@@ -8,6 +8,7 @@ import UsersPage from "./pages/UsersPage";
 import OrdersPage from "./pages/OrdersPage";
 import SettingsPage from "./pages/SettingsPage";
 import Sidebar from "./components/common/Sidebar";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const isAuthenticated =localStorage.getItem("auth") === "true";
 
@@ -21,55 +22,73 @@ function App() {
 				<Route
 				path="/dashboard"
 				element={
-					<div className="flex w-full h-full bg-white text-black">
-					<Sidebar />
-					<Dashboard />	
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black">
+						<Sidebar />
+						<Dashboard />	
+						</div>
+					</ProtectedRoute>
 				}
 				/>
 				<Route
 				path="/analytics"
 				element={
-					<div className="flex w-full h-full bg-white text-black ">
-                  <Sidebar />
-				  <AnalyticsPage />
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black ">
+						<Sidebar />
+						<AnalyticsPage />
+						</div>
+					</ProtectedRoute>
 					}
 				/>
 				<Route
 				path="/products"
 				element={
-					<div className="flex w-full h-full bg-white text-black">
-                  <Sidebar />
-				  <ProductsPage />
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black">
+						<Sidebar />
+						<ProductsPage />
+						</div>
+					</ProtectedRoute>
 					}
 				/>
 				<Route
 				path="/users"
 				element={
-					<div className="flex w-full h-full bg-white text-black">
-                  <Sidebar />
-				  <UsersPage />
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black">
+						<Sidebar />
+						<UsersPage />
+						</div>
+					</ProtectedRoute>
 					}
 				/>
 				<Route
 				path="/orders"
 				element={
-					<div className="flex w-full h-full bg-white text-black">
-                  <Sidebar />
-				  <OrdersPage />
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black">
+						<Sidebar />
+						<OrdersPage />
+						</div>
+					</ProtectedRoute>
 					}
 				/>
 				<Route
 				path="/settings"
 				element={
-					<div className="flex w-full h-full bg-white text-black">
-                  <Sidebar />
-				  <SettingsPage />
-					</div>
+					<ProtectedRoute>
+
+						<div className="flex w-full h-full bg-white text-black">
+						<Sidebar />
+						<SettingsPage />
+						</div>
+					</ProtectedRoute>
 					}
 				/>
                </Routes>

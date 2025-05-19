@@ -12,8 +12,8 @@ const SIDEBAR_ITEMS = [
     //     { name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
     // =======
 	{ name: "Analytics", icon: TrendingUp, color: "#3B82F6", href: "/analytics" },
-	{ name: "Creative", icon: ShoppingBag, color: "#8B5CF6", href: "/products" },
-	{ name: "Partners", icon: Users, color: "#EC4899", href: "/users" },
+	{ name: "Partner", icon: ShoppingBag, color: "#8B5CF6", href: "/products" },
+	{ name: "Clients", icon: Users, color: "#EC4899", href: "/users" },
 	{ name: "Orders", icon: ShoppingCart, color: "#F59E0B", href: "/orders" },
 	{ name: "Settings", icon: Settings, color: "#6EE7B7", href: "/settings" },
 	{name: "Logout", icon:LogOut, color: "#DC2626", href: "/logout"},
